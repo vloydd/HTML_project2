@@ -1,3 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'),
+        url('OpenSansCondensed-Light.woff2') format('woff2'),
+        url('OpenSansCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: local('Open Sans Condensed Light Italic'), local('OpenSansCondensed-LightItalic'),
+        url('OpenSansCondensed-LightItalic.woff2') format('woff2'),
+        url('OpenSansCondensed-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'),
+        url('OpenSansCondensed-Bold.woff2') format('woff2'),
+        url('OpenSansCondensed-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 *{
+}
+body {
+    line-height: 22px;
+    font-family: 'PT Sans', sans-serif;
+    margin:0;   
+}
+#container {
+}
+.head{
+}   
+.headsection {
+    padding:  0 200px;
+    width: 100%;
+    background-color: #dcdcdc;
+}
+.headin980 {
+    padding: 65px 10px;
+    width: 980px;
+    margin: 0;
+}
+#logo {
+    height:100px;
+    width:273px;
+    margin-right: 225px;
     
+}
+.headcont {
+    display: flex;
+    align-items: center;
+}
+.contacts {
+    margin-left: 225px;
+    font-family: 'Open Sans Condensed', sans-serif!important;   
+    font-size: 29px;
+    line-height: 41px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #767676;
+    width: 256px;
+    height: 82px;   
+    text-align: center;
+}
+.contacts p {
+    margin: 0;
+}
+.barsection {
+    padding:  0 200px;
+    width: 100%;
+    background-color: #777777;  
+} 
+.barin980 {
+    padding: 0px 10px;
+    width: 980px;
+    height: 80px;
+}
+.navbar {
+    align-items: center;
+}  
+.menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin:0;
+    text-align: center;
+}
+.menu li {
+    align-items: center;
+    list-style: none;
+
+}
+.menu a {
+    text-align: justify;
+    align-items: center;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 11px;
+}
+.menu a:hover {
+    text-decoration: underline;
 }
