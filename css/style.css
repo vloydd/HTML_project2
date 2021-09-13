@@ -41,19 +41,21 @@
     color: #ffffff;
 }
 body {
-    position: relative;
-    margin:0;   
+    position: relative;  
     display: flex;
     flex-direction: column;
+    margin:0; 
 }
 #container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;*/
+    overflow: hidden;
+
 } 
 .headsection {
     display: block;
-    padding:  0 200px;
     width: 100%;
     height: 230px;
     align-items: center;
@@ -64,25 +66,28 @@ body {
 .headin980 {
     padding: 0px 10px;
     width: 980px;
-    margin: 0;
-}
-#logo {
-    position: absolute;
-    left:0;
-    height:100px;
-    width:273px;
-    
+    margin: auto;
 }
 .headcont {
-    margin: 50px 0px;
+    /*margin: 50px 0px;*/
     position: relative;
     display: flex;
     align-items: center;
 }
+#logo {
+    /*position: absolute;
+    left:0;*/
+    display: block;
+    height:100px;
+    width:273px;
+    
+}
 .contacts {
+    /*position: sticky;
     position: absolute;
-    right:0;    
-
+    right:0;  */
+    display: block;
+    margin-left: auto; 
     height: 82px;   
     text-align: center;
 }
@@ -100,15 +105,16 @@ body {
 
 /*BAR SECTION*/
 .barsection {
+    background-color: #777777; 
+    position: static;
     display: block;
-    padding:  0 200px;
     width: 100%;
-    background-color: #777777;  
 } 
 .barin980 {
     padding: 0px 10px;
     width: 980px;
     height: 80px;
+    margin: auto;
     align-items: center;  
 } 
 .menu {
@@ -149,49 +155,50 @@ body {
 .sldsection {
     /*height: 400;
     width: 100%;*/
-    background-color: #ffffff;
-    padding: 0 82px;
+    width: 100%;
+    margin: 0 auto;
     overflow: hidden;
+    background-color: #f8f8f8;
+
 }
 .slide980  {
-    justify-content: center;
-    background-image:url('../img/slider.png');
+    /*justify-content: center;
     background-position:center center;
     background-size:cover;
-    overflow: hidden; 
-    height: 400px;
+    overflow: hidden; */
+    width: 1248px;
+    box-sizing: border-box;
+    /*background-position:center center;*/
+    background-size:cover;
+    margin: 0 auto;
+    margin-top: -62px;
+    display: block;
 }
-/*.slide980 {
+.slide980 {
     position: relative;
     overflow: hidden;
     height: 400px;
     
 }
-.slide980 img {
-    transform:translate(-50% -50%);
-}*/
-
-
 
 .mainsection {
     display: block;
-    padding:  0 200px;
     width: 100%;
     background-color: #ffffff;  
 }
 .mainin980 {
+    margin: auto;
     padding: 0px  10px 0px 10px;
     width: 980px;
-    margin: 0;
     height: 785px;
 }
 .twoblocks {
-    position: relative; 
+    display: flex;
+    flex-direction: row;
 }
 .newsblock {
+    display: block;
     padding-top:30px;
-    position: absolute;
-    left:0;
 }
 .news h2 {
     font-family: 'PT Sans';
@@ -207,7 +214,6 @@ body {
     height: 560px;
     background-color: #777777;
     padding: 22px 0 0 33px;
-    /*margin-right: 59px;*/
 }
 .newsmenu {
     margin-top: 38px;
@@ -234,17 +240,15 @@ body {
 .newsmenu li:last-child {
     text-decoration: underline;
     text-align: right;
-    /*margin-top: 3px;*/
     margin-bottom: 0;
 }
 .infoblock {
-    padding-top: 50px;
-    position: absolute;
-    right:0;
+    display: block;
+    padding-top: 52px;
     margin-left: 59px;
 } 
 .info {
-    /*height: 500px;*/
+    height: 500px;
     width: 570px;
     background-color: #ffffff;
 }
@@ -266,30 +270,38 @@ body {
     font-size: 14px;
     margin-top:30px;
     margin-bottom: 0px;
-}
+}*/
 
 
 
 
-
-.footsection {
+.footer {
+   /* position: relative;
+	min-height: 100%;
     position: absolute;
-    display: block;
-    padding:  0 200px;
-    width: 100%;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;*/
+    /*flex: 0 0 auto;*/
+}
+.footsection {
+    margin-top: auto;
+    /*bottom: 0; 
+    width: 100%;*/
+    margin-top: auto;
     height: 220px;
-    background-color: #777777;  
+    background-color: #777777; 
+    position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%; 
 }
 .footin980 {
     position: relative;
     display: flex;
     padding: 50px  10px 0px 10px;
     width: 980px;
-    margin: 0;
-}
-.footblocks {
-    /*position: relative;
-    padding-top: 50px;*/
+    margin: auto;
 }
 .copyrights {
     position: absolute;
