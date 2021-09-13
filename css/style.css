@@ -55,10 +55,14 @@ body {
     display: block;
     padding:  0 200px;
     width: 100%;
+    height: 230px;
+    align-items: center;
     background-color: #dcdcdc;
+    display: flex;
+    align-items: center; 
 }
 .headin980 {
-    padding: 65px 10px;
+    padding: 0px 10px;
     width: 980px;
     margin: 0;
 }
