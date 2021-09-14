@@ -1,35 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
 @font-face {
-    font-weight: 300;
+    font-family: 'Open Sans Condensed';
     font-style: normal;
-    font-display: swap;
-    font-family: 'Open Sans Condensed';
-    src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'),
-        url('OpenSansCondensed-Light.woff2') format('woff2'),
-        url('OpenSansCondensed-Light.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: local('Open Sans Condensed Light Italic'), local('OpenSansCondensed-LightItalic'),
-        url('OpenSansCondensed-LightItalic.woff2') format('woff2'),
-        url('OpenSansCondensed-LightItalic.woff') format('woff');
     font-weight: 300;
-    font-style: italic;
-    font-display: swap;
+    src: local(''),
+         url('../fonts/open-sans-condensed-v15-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/open-sans-condensed-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'),
-        url('OpenSansCondensed-Bold.woff2') format('woff2'),
-        url('OpenSansCondensed-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
 
 
 *{
@@ -71,7 +47,7 @@ html, body {
     display: flex;
     align-items: center;
 }
-#logo {
+.logo {
     display: block;
     height:100px;
     width:273px;
@@ -269,7 +245,7 @@ html, body {
 	bottom: 0;
 }
 .footin980 {
-    height: 220px;
+    height: 170px;
     padding: 50px  10px 0px 10px;
     position: relative;
     display: flex;
@@ -286,9 +262,11 @@ html, body {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
+    height: 37px;
 }
 .copyrights p {
     margin-top: 0;
+    margin-bottom: 11px;
     font-family: 'PT Sans';
     font-size: 11px;
     line-height: 11px;
@@ -314,15 +292,16 @@ html, body {
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
+    margin: 0;  
 }
 .inform p u {
+    font-size: 11px;
+    margin: 0;  
     text-decoration: underline #a7a7a7;
 }
 .footnav {
-    /*position: absolute;*/
-    right:50%;
-    left:50%;
-    /*display: flex;*/
+    /*right:50%;
+    left:50%;*/
     width: 120px;
 }
 .footmenu {
