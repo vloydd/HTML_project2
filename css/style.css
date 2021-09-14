@@ -41,7 +41,6 @@
     color: #ffffff;
 }
 html, body {
-    /*position: relative;  */
     margin:0; 
     height: 100%;   
 }
@@ -49,13 +48,9 @@ html, body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    /* display: flex;
-    flex-direction: column;*/
-    /*overflow: hidden;*/
 
 } 
-.main {
-}
+/*HEADER*/
 .headsection {
     display: block;
     width: 100%;
@@ -73,22 +68,16 @@ html, body {
 }
 .headcont {
     width: 980px;
-    /*margin: 50px 0px;*/
     display: flex;
     align-items: center;
 }
 #logo {
-    /*position: absolute;
-    left:0;*/
     display: block;
     height:100px;
     width:273px;
     
 }
 .contacts {
-    /*position: sticky;
-    position: absolute;
-    right:0;  */
     display: block;
     margin-left: auto; 
     height: 82px;   
@@ -105,8 +94,12 @@ html, body {
 }
 
 
+/*MAIN (i mean it's menu bar, slider and content)*/
+.main {
+    flex-grow: 1;
+}
 
-/*BAR SECTION*/
+/*MENU BAR SECTION*/
 .barsection {
     background-color: #777777; 
     position: static;
@@ -142,37 +135,36 @@ html, body {
     color: #ffffff;
     text-decoration: none;
     margin: 0 20px;
+    margin-bottom: 5px;
 }
 .menu li:last-child {
     border-right: none;
 }
 .menu a:hover {
-    text-decoration: underline;
+    text-decoration: underline 3px;
 }
 .navig ul {
     margin: auto auto;
 }
 
 
-
+/*SLIDER SECTION*/
 .sldsection {
-    /*height: 400;
-    width: 100%;*/
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
     background-color: #f8f8f8;
 
 }
-.slide980  {
+.sliderimage  {
     width: 1248px;
     margin: 0 auto;
     margin-top: -62px;
     display: block;
 }
-.main {
-    flex-grow: 1;
-}
+
+
+/*CONTENT PART*/
 .mainsection {
     display: block;
     width: 100%;
@@ -183,13 +175,14 @@ html, body {
     margin: auto;
     padding: 0px  10px 0px 10px;
     width: 980px;
-    /*min-height: 785px;*/
     height: 785px;
 }
 .twoblocks {
     display: flex;
     flex-direction: row;
 }
+
+/*NEWS BLOCK*/
 .newsblock {
     display: block;
     padding-top:30px;
@@ -205,15 +198,13 @@ html, body {
 }
 .news {
     width: 317px;
-    height: 538px;
     background-color: #777777;
-    padding: 22px 0 0 33px;
+    padding: 22px 0 100px 33px;
 }
 .newsmenu {
     margin-top: 38px;
     margin-bottom: 0;
     padding: 0 52px 0 0;
-    /*padding-bottom: 100px;*/
     list-style: none;
 }
 .newsmenu h6 {
@@ -236,6 +227,8 @@ html, body {
     text-align: right;
     margin-bottom: 0;
 }
+
+/*INFO BLOCK*/
 .infoblock {
     display: block;
     padding-top: 52px;
@@ -267,42 +260,26 @@ html, body {
 }
 
 
-/*.center {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}*/
 
-.footer {
-   /* position: relative;
-	min-height: 100%;
-    position: absolute;
-    margin-top: auto;
-    bottom: 0;
-    width: 100%;*/
-    /*flex: 0 0 auto;*/
-}
+/*FOOTER SECTION*/
 .footsection {
-    margin-top: auto;
     display: block;
     width: 100%;
-    margin-top: auto;
-    height: 220px;
     background-color: #777777; 
-    /*position: absolute;
-	left: 0;*/
 	bottom: 0;
-	width: 100%; 
 }
 .footin980 {
+    height: 220px;
+    padding: 50px  10px 0px 10px;
     position: relative;
     display: flex;
-    padding: 50px  10px 0px 10px;
+    /*padding: 50px  10px 0px 10px;*/
     width: 980px;
     margin: auto;
 }
 .copyrights {
-    position: absolute;
+    margin-right: auto;
+    /*position: absolute;*/
     font-family: 'PT Sans';
     font-size: 14px;
     line-height: 22px;
@@ -311,17 +288,19 @@ html, body {
     color: #ffffff;
 }
 .copyrights p {
+    margin-top: 0;
     font-family: 'PT Sans';
-    font-size: 14px;
-    line-height: 10px;
+    font-size: 11px;
+    line-height: 11px;
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #ffffff;
 }
+
 .logoinfo {
-    position: absolute;
-    right:0;
     display:flex;
+    margin-left: auto;
+    height: 38px;
 }
 .inform {
     height: 33px;
@@ -333,19 +312,27 @@ html, body {
     margin-top:0px;
     line-height: 9px;
     font-weight: 400;
-    text-decoration: underline;
     letter-spacing: 0.025em;
     color: #ffffff;
 }
+.inform p u {
+    text-decoration: underline #a7a7a7;
+}
 .footnav {
-    position: absolute;
+    /*position: absolute;*/
     right:50%;
     left:50%;
-    display: flex;
-    width: 150px;
+    /*display: flex;*/
+    width: 120px;
 }
 .footmenu {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+.footmenu li:first-child {
+    margin-top: 0;
+}
+.footmenu a {
+    text-decoration: underline #a7a7a7 2px;
 }
